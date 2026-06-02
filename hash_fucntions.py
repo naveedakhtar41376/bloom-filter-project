@@ -1,7 +1,7 @@
 """
 Hash functions for the Bloom Filter project.
 
-This module defines a family of hash functions using SHA_256 with different values of seed.
+This module defines a family of hash functions using SHA_256 with different seed values.
 The goal is to generate k different hash positions for each input item.
 """
 
