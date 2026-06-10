@@ -6,10 +6,8 @@
 #SBATCH --mem=4G
 #SBATCH --cpus-per-task=1
 
-# Adapt these lines to the VSC/HPC environment used by your university.
-# Example pattern:
-# module load Miniconda3
-# conda activate bloom-filter-project
+source "$VSC_DATA"/miniconda3/etc/profile.d/conda.sh
+conda activate bloom-filter-project
 
 set -euo pipefail
 
