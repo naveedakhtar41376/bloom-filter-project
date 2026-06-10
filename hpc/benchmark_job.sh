@@ -6,8 +6,8 @@
 #SBATCH --mem=4G
 #SBATCH --cpus-per-task=1
 #SBATCH --account=lp_h_ds_students
-#SBATCH --clusters=genius
-#SBATCH --partition=batch_skylake
+#SBATCH --clusters=wice
+#SBATCH --partition=batch
 
 source "$VSC_DATA"/miniconda3/etc/profile.d/conda.sh
 conda activate bloom-filter-project
