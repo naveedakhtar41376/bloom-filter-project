@@ -1,0 +1,18 @@
+SLURM_JOB_ID: 60527704
+SLURM_JOB_USER: vsc38831
+SLURM_JOB_ACCOUNT: lp_h_ds_students
+SLURM_JOB_NAME: bloom_filter_benchmark
+SLURM_CLUSTER_NAME: wice
+SLURM_JOB_PARTITION: batch
+SLURM_NNODES: 1
+SLURM_NODELIST: n28c20n3
+SLURM_JOB_CPUS_PER_NODE: 2
+Date: Wed Jun 10 23:27:25 CEST 2026
+Walltime: 00-00:45:00
+========================================================================
+Wrote benchmark results to results/benchmark_results.csv
+Wrote hash distribution results to results/hash_distribution_results.csv
+Wrote false positive results to results/false_positive_results.csv
+Wrote compression results to results/compression_results.csv
+Wrote figures to figures
+All expected result files and columns are present.
