@@ -109,13 +109,26 @@ class BloomFilter:
 
     def __contains__(self, item: Any) -> bool:
         return self.check(item)
-
     def theoretical_false_positive_rate(self) -> float:
         """Estimate false positive probability after current insertions."""
         k = self.num_hashes
         m = self.size
         n = self.items_added
         return (1 - math.exp(-(k * n) / m)) ** k
+
+    def __len__(self) -> int:
+        """Return the number of items inserted into the filter."""
+        return self.items_added
+
+    def __repr__(self) -> str:
+        """Return a readable summary of the Bloom filter's configuration."""
+        return (
+            "BloomFilter("
+            f"expected_items={self.config.expected_items}, "
+            f"false_positive_rate={self.config.false_positive_rate}, "
+            f"size={self.size}, num_hashes={self.num_hashes}, "
+            f"items_added={self.items_added})"
+        )
 
     def fill_ratio(self) -> float:
         """Return the proportion of bits currently set to 1."""
